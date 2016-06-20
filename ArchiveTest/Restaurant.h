@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Restaurant : NSObject
+@interface Restaurant : NSObject <NSCoding>
+@property (strong, nonatomic, readonly) NSString *name;
+@property (strong, nonatomic, readonly) NSString *phoneNumber;
+@property (strong, nonatomic, readonly) NSString *imageName;
+
+- (id) initWithName: (NSString*) newName;
+- (id) initWithName: (NSString*) newName withPhoneNumber: (NSString *)newphoneNumber;
+- (id) initWithName: (NSString*) newName withPhoneNumber: (NSString *)newphoneNumber
+      withImageName: (NSString *)newImageName;
 
 @end

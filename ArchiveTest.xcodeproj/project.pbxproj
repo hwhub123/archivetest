@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C93AF8401D17788100CDE81C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AF83F1D17788100CDE81C /* main.m */; };
+		C93AF8481D1782CF00CDE81C /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AF8471D1782CF00CDE81C /* Restaurant.m */; };
+		C93AF84B1D179FA000CDE81C /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AF84A1D179FA000CDE81C /* BookStore.m */; };
+		C93AF84E1D17AE2100CDE81C /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AF84D1D17AE2100CDE81C /* Shop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		C93AF83C1D17788100CDE81C /* ArchiveTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ArchiveTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93AF83F1D17788100CDE81C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C93AF8461D1782CF00CDE81C /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		C93AF8471D1782CF00CDE81C /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		C93AF8491D179FA000CDE81C /* BookStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
+		C93AF84A1D179FA000CDE81C /* BookStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookStore.m; sourceTree = "<group>"; };
+		C93AF84C1D17AE2100CDE81C /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		C93AF84D1D17AE2100CDE81C /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				C93AF83F1D17788100CDE81C /* main.m */,
+				C93AF8461D1782CF00CDE81C /* Restaurant.h */,
+				C93AF8471D1782CF00CDE81C /* Restaurant.m */,
+				C93AF8491D179FA000CDE81C /* BookStore.h */,
+				C93AF84A1D179FA000CDE81C /* BookStore.m */,
+				C93AF84C1D17AE2100CDE81C /* Shop.h */,
+				C93AF84D1D17AE2100CDE81C /* Shop.m */,
 			);
 			path = ArchiveTest;
 			sourceTree = "<group>";
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93AF8481D1782CF00CDE81C /* Restaurant.m in Sources */,
+				C93AF84B1D179FA000CDE81C /* BookStore.m in Sources */,
 				C93AF8401D17788100CDE81C /* main.m in Sources */,
+				C93AF84E1D17AE2100CDE81C /* Shop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

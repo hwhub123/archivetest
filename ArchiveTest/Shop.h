@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Restaurant.h"
+#import "BookStore.h"
 
-@interface Shop : NSObject
+@interface Shop : NSObject <NSCoding>
+@property (strong, nonatomic) BookStore *bookStore;
+@property (strong, nonatomic) Restaurant *restaurant;
+
+- (id) initWithBookStore: (BookStore *)newBookStore
+           andRestaurant: (Restaurant *)newRestaurant;
 
 @end

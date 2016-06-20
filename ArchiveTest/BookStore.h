@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BookStore : NSObject
+typedef enum location { kNone = 0, kSeoul, kPusan, kDaegu } Location;
+
+@interface BookStore : NSObject <NSCoding>
+
+@property (strong, nonatomic, readonly) NSString *name;
+@property (strong, nonatomic, readonly) NSString *phoneNumber;
+@property (strong, nonatomic, readonly) NSString *imageName;
+@property (assign, nonatomic, readonly) Location location;
+
+
+- (id) initWithName: (NSString*) newName;
+- (id) initWithName: (NSString*) newName withPhoneNumber: (NSString *)newphoneNumber;
+- (id) initWithName: (NSString*) newName withPhoneNumber: (NSString *)newphoneNumber
+      withImageName: (NSString *)newImageName;
+- (id) initWithName: (NSString*) newName withPhoneNumber: (NSString *)newphoneNumber
+      withImageName: (NSString *)newImageName withLocation: (Location)newLocation;
 
 @end
